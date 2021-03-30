@@ -7,7 +7,7 @@ app.set("view engine", "ejs");
 app.use(express.static("public"));
 app.use(express.urlencoded({extended: true}));
 
-mongoose.connect('', { useUnifiedTopology: true , useNewUrlParser: true})
+mongoose.connect('<connection string>', { useUnifiedTopology: true , useNewUrlParser: true})
     .then(()=> console.log("Connected to MongoDb"))
     .catch((err)=> console.error('Failed to connect to database', err.message));
 
