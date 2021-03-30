@@ -7,7 +7,7 @@ app.set("view engine", "ejs");
 app.use(express.static("public"));
 app.use(express.urlencoded({extended: true}));
 
-mongoose.connect('mongodb+srv://Darshil:Darshil99@cluster0.7myv5.mongodb.net/PizzaStore?retryWrites=true&w=majority', { useUnifiedTopology: true , useNewUrlParser: true})
+mongoose.connect('', { useUnifiedTopology: true , useNewUrlParser: true})
     .then(()=> console.log("Connected to MongoDb"))
     .catch((err)=> console.error('Failed to connect to database', err.message));
 
